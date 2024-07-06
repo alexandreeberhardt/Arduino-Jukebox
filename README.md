@@ -22,5 +22,3 @@ This is a short project that creates a jukebox using an Arduino (Mega 2560 R3) a
 - Upgrade connectivity to use a Wi-Fi component.
 - Use a Raspberry Pi to run the project locally.
 - Add LED controls to change the lighting according to the music.
-
-You will need spotify client id and secret, that you can get at https://developer.spotify.com/dashboard 
