@@ -6,15 +6,10 @@ import os
 
 load_dotenv()
 
-client_id = os.getenv('SPOTIPY_CLIENT_ID')
-client_secret = os.getenv('SPOTIPY_CLIENT_SECRET')
-redirect_uri = os.getenv('SPOTIPY_REDIRECT_URI')
-scope = 'user-modify-playback-state user-read-playback-state'
-
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id,
-                                               client_secret=client_secret,
-                                               redirect_uri=redirect_uri,
-                                               scope=scope))
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=os.getenv('SPOTIPY_CLIENT_ID'),
+                                               client_secret=os.getenv('SPOTIPY_CLIENT_SECRET'),
+                                               redirect_uri=os.getenv('SPOTIPY_REDIRECT_URI'),
+                                               scope='user-modify-playback-state user-read-playback-state'))
 
 ser = serial.Serial('/dev/ttyACM0', 9600)
 
