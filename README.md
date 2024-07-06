@@ -17,7 +17,7 @@ I used this interfacing : [circuito Mega 2560 RFID-RC522](https://www.circuito.i
 ### Requirements
 
 - You will need a Spotify Client ID and Secret, which you can get at the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard).
-- To install dependances : `pip install -r requirements.txt`
+- To install dependancies : `pip install -r requirements.txt`
 
 ### Future Improvements
 
